@@ -3,6 +3,6 @@ class Post < ApplicationRecord
 
   validates :title, presence: true
   validates :content, presence: true
-  validates :published, inclusion: {id: [true, false]}
+  validates :published, inclusion: [true, false]
   validates :user_id, presence: true
 end
